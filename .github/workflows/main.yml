@@ -30,13 +30,13 @@ jobs:
         aws-region:  eu-central-1 
 
     - name: Build project
-      run: npm run build
+      run: npm run build:client 
 
     - name: Deploy to AWS
       run: |
         # Add your deployment steps here, such as using AWS CLI to deploy to S3, Elastic Beanstalk, etc.
         # Example:
-        # aws s3 sync dist/ s3://your-bucket-name
+         aws s3 sync ./dist/static s3://development-planner
 
     - name: Run tests
       run: npm test
