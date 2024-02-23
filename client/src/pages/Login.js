@@ -14,6 +14,8 @@ export default function Login({ setAuth }) {
 					alt="CYF Development Planner"
 					src={development}
 				/>
+
+				<h1 className="login-title">Welcome to CYF Development Planner**</h1>
 				<LoginForm setAuth={setAuth} />
 			</Card>
 		</>
